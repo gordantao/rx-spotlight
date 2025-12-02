@@ -4,7 +4,7 @@
 [![PySpark](https://img.shields.io/badge/PySpark-3.x-orange.svg)](https://spark.apache.org/)
 [![AWS S3](https://img.shields.io/badge/AWS-S3-yellow.svg)](https://aws.amazon.com/s3/)
 
-## 🎯 Project Overview
+## Project Overview
 
 **RX Spotlight** is a comprehensive PySpark ETL pipeline designed to process, analyze, and visualize over **100 million rows** of Medicare Part D prescription data from an S3 data lake. The pipeline identifies geographic and temporal patterns in high-risk prescriptions (particularly opioids) to support public health insights and policy decisions.
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -60,7 +60,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 rx-spotlight/
@@ -83,7 +83,7 @@ rx-spotlight/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -120,7 +120,7 @@ S3_BUCKET = "s3://your-medicare-bucket"
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Run Full Pipeline
 
@@ -151,7 +151,7 @@ python main.py --year 2023 --mode full --profile
 
 ---
 
-## 📊 Output Datasets
+## Output Datasets
 
 The pipeline generates the following datasets for Tableau:
 
@@ -167,7 +167,7 @@ The pipeline generates the following datasets for Tableau:
 
 ---
 
-## 🔬 Key Analysis Features
+## Key Analysis Features
 
 ### High-Risk Drug Detection
 
@@ -192,7 +192,7 @@ The pipeline automatically flags prescriptions for:
 
 ---
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Spark Configuration
 
@@ -216,7 +216,7 @@ SPARK_CONFIG = {
 
 ---
 
-## 📊 Tableau Dashboard Integration
+## Tableau Dashboard Integration
 
 ### Connecting to Data
 
@@ -240,7 +240,7 @@ SPARK_CONFIG = {
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Extract Module Test
 
@@ -265,7 +265,7 @@ python load_to_s3.py
 
 ---
 
-## 📝 Data Sources
+## Data Sources
 
 - **Medicare Part D Prescriber Data**: CMS.gov public use files
 - **NPI Registry**: National Provider Identifier database
@@ -274,43 +274,5 @@ python load_to_s3.py
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**Gordon Tao**
+**Gordan Tao**
 - GitHub: [@gordantao](https://github.com/gordantao)
-
----
-
-## 🙏 Acknowledgments
-
-- Centers for Medicare & Medicaid Services (CMS) for public data
-- Apache Spark community for excellent documentation
-- Tableau for data visualization platform
-
----
-
-## 📞 Contact
-
-For questions or feedback, please open an issue on GitHub.
-
----
-
-**⚠️ Disclaimer**: This project uses public Medicare data for educational and research purposes. All CMS privacy guidelines and data use agreements must be followed.
